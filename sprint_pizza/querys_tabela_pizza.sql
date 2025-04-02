@@ -1,0 +1,6 @@
+CREATE TABLE "Pizza" (
+	codigo SERIAL PRIMARY KEY NOT NULL,
+	nome VARCHAR(30) NOT NULL,
+	descricao VARCHAR(30) NOT NULL,
+	valor NUMERIC(30) NOT NULL
+);

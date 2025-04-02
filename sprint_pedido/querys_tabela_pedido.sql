@@ -1,0 +1,7 @@
+CREATE TABLE "Pedido" (
+	numero SERIAL PRIMARY KEY NOT NULL,
+	id_cliente INT NOT NULL,
+	valor NUMERIC(4,2) NOT NULL,
+	data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	FOREIGN KEY (id_cliente) REFERENCES "Cliente"(id_cliente)
+);
